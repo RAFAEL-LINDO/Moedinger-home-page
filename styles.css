@@ -1,0 +1,129 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: #3c92fa;
+    --preto: #000000;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    background-image: url("img/Landscape-Wallpaper-4k.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}    
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    height: 100vh;
+    display: inline-block;
+    grid-template-columns: 50%; 
+    margin: 0 25%;
+    
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: inline-block;
+    width: 20em;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.container__aviso {
+    font-size: 1em;
+    color: var(--cinza-secundario);
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.container__caixa {
+    margin: 6em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 2em 0;
+}
+
+.dispositivos {
+    text-align: center;
+    position: absolute;
+    bottom: 10em;
+    width: 50%; 
+}
+
+.dispositivos__titulo {
+    font-size: 1.5em;
+    color: var(--branco-principal);
+}
+
+.lista__item {
+    font-size: 1em;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    margin: 1em 3em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+    position: absolute;
+    bottom: 3em;
+    width: 50%; 
+}
+
+.lista__link a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    width: 50%; 
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.lista__link a:active {
+    color: purple;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
