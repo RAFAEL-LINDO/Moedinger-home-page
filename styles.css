@@ -1,7 +1,7 @@
 :root {
     --branco-principal: #FFFFFF;
-    --cinza-secundario: #C0C0C0;
-    --botao-azul: #167BF7;
+    --cinza-secundario: #696969;
+    --botao-azul: transparent;
     --cor-de-fundo: #00030C;
     --fonte-principal: 'Inter';
     --botao-azul-efeito: #3c92fa;
@@ -14,7 +14,7 @@ body {
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
-    background-image: url("img/Landscape-Wallpaper-4k.jpg");
+    background-image: url("img/background.jpg");
     background-repeat: no-repeat;
     background-size: 100vw;
 }    
@@ -29,9 +29,9 @@ body {
     align-items: center; 
     text-align: center; 
     height: 100vh;
-    display: inline-block;
+    display: block;
     grid-template-columns: 50%; 
-    margin: 0 25%;
+    margin: 15em 25%;
     
 }
 
@@ -44,10 +44,12 @@ body {
     width: 20em;
     text-decoration: none;
     margin-bottom: 1em;
+    border-color: var(--branco-principal);
+    border-style: solid;
 }
 
 .container__aviso {
-    font-size: 1em;
+    font-size: 0.8em;
     color: var(--cinza-secundario);
 }
 
@@ -57,32 +59,9 @@ body {
     margin-bottom: 1em;
 }
 
-.container__caixa {
-    margin: 6em;
-}
-
-.dispositivos__lista {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin: 2em 0;
-}
-
-.dispositivos {
-    text-align: center;
-    position: absolute;
-    bottom: 10em;
-    width: 50%; 
-}
-
-.dispositivos__titulo {
-    font-size: 1.5em;
-    color: var(--branco-principal);
-}
 
 .lista__item {
     font-size: 1em;
-    color: var(--branco-principal);
 }
 
 .rodape {
@@ -102,7 +81,7 @@ body {
 
 .lista__link a{
     text-decoration: none;
-    color: var(--branco-principal);
+    color: var(--cinza-secundario);
     margin-left: 1em;
 }
 
